@@ -1,0 +1,26 @@
+<div class="flex-container">
+    <div style="float:left;flex:30%;  height:550px; overflow:auto;">
+        <app-list-columns-select #ListColumn></app-list-columns-select>
+    </div>
+    <div style="flex:70%;">
+      <div class="flex-container2 " style="height:100%" >
+        <div style="flex:70%;" >
+            <p style="text-align: center;">
+                <mat-form-field appearance="outline"  class="full-width">
+                  <mat-label>Condition</mat-label>
+                  <textarea  [(ngModel)] = "condition" matInput placeholder="Where....." style="height: 250px;"></textarea>
+                </mat-form-field>
+            </p>
+        </div>
+        <div style="flex:30%;" >
+          <p style="text-align: center;">
+            <button mat-raised-button  (click)='onSave()' color="primary"
+               style="margin: 20px;" >Save</button>
+            <button mat-raised-button  (click)='onClose()' color="primary"
+               style="margin: 20px;" >Close</button>
+          </p>
+        </div>
+      </div>
+    </div>
+    
+</div>

@@ -1,0 +1,14 @@
+<div class="flex-container">
+    <div style="float:left;flex:30%;  height:550px; overflow:auto;">
+        <app-list-columns-combine #ListColumn1>Columns INPUT 1</app-list-columns-combine>
+    </div>
+    <div style="float:left;flex:70%;  height:550px; overflow:auto;">
+        <app-list-columns-combine   #ListColumn2>Columns INPUT 2</app-list-columns-combine>
+    </div>
+</div>
+<p style="text-align: center;">
+        <button mat-raised-button  (click)='onSave()' color="primary"
+           style="margin: 20px;" >Save</button>
+        <button mat-raised-button  (click)='onClose()' color="primary"
+           style="margin: 20px;" >Close</button>
+</p>
